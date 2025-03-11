@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <section class="hero">
+        <header>
+            <h1>Desserts</h1>
+        </header>
+
+         <section class="main">
+        <main>
+
+            <section class="photofirst" id="produkt1">
+                <img src="images/image-waffle-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="photofirst">
+                <img src="images/image-creme-brulee-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="photofirst">
+                <img src="images/image-macaron-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="phototwo">
+                <img src="images/image-tiramisu-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="phototwo">
+                <img src="images/image-baklava-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="phototwo">
+                <img src="images/image-meringue-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="photothree">
+                <img src="images/image-cake-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="photothree">
+                <img src="images/image-brownie-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+            <section class="photothree">
+                <img src="images/image-panna-cotta-desktop.jpg" alt="">
+                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
+            </section>
+
+        </main>
+    </section>
+
+        <section class="sholplist" id="koszyk">
+            <h1>Your Cart (0)</h1>
+
+            <p>Your added items will appear here</p>
+        </section>
+    </section>
+    
+    <script>
+      
+        let produkt1 = document.getElementById("produk1");
+        let koszyk = document.getElementById("koszyk");
+        
+        produkt1.addEventListener("click", function(){
+            koszyk.innerHTML += "<h1>dasdasd</h1>"
+        })
+
+    </script>
+
+</body>
+
+</html>

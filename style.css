@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(13, 31%, 94%);
+}
+
+
+.hero{
+    width: 1440px;
+    margin-top: 20px;
+}
+
+header{
+    width: 1190px;
+    float: left;
+}
+
+.sholplist{
+    background-image: url(images/illustration-empty-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.sholplist h1{
+    color: hsl(14, 86%, 42%);
+    margin: 10px 15px 5px;
+}
+
+.sholplist p{
+    text-align: center;
+    margin: 0px 0px 30px;
+}
+
+.main{
+    width: 1190px;
+    height: 1000px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photofirst{
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photofirst img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.photofirst button{
+    border: solid 1px grey;
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.phototwo{
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phototwo button{
+    border: solid 1px grey;
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.phototwo img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.photothree{
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photothree button{
+    border: solid 1px grey;
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.photothree img{
+    width: 200px;
+    border-radius: 20px;
+}
