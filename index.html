@@ -10,31 +10,18 @@
 
   <title>Frontend Mentor | Product list with cart</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-
   <main>
     <section class="product-list">
-      <div class="top">
+      <div class="lista">
         <h1> Desserts</h1>
       </div>
-      <div class="bottom">
+      <div class="main-box">
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-waffle-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -53,8 +40,8 @@
           </div>
         </div>
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-creme-brulee-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -72,8 +59,8 @@
             <h2 class="price">$7.00</h2>
           </div>
         </div>
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-macaron-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -91,8 +78,8 @@
             <h2 class="price">$8.00</h2>
           </div>
         </div>
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-tiramisu-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -110,8 +97,8 @@
             <h2 class="price">$5.50</h2>
           </div>
         </div>
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-baklava-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -130,8 +117,8 @@
           </div>
         </div>
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-meringue-desktop.jpg" alt="" >
           </div>
           <div class="product_add">
@@ -150,8 +137,8 @@
           </div>
         </div>
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-cake-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -170,8 +157,8 @@
           </div>
         </div>
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-brownie-desktop.jpg" alt="">
           </div>
           <div class="product_add">
@@ -190,8 +177,8 @@
           </div>
         </div>
 
-        <div class="product">
-          <div class="product-image">
+        <div class="produkt">
+          <div class="produkt-image">
             <img src="images/image-panna-cotta-desktop.jpg" alt="">
           </div>
           <div class="product_add" >
@@ -264,15 +251,32 @@
 
     <script>
         const buttons = [
-    {id: "buttonik1", name: "Waffle with Berries", price: 6.50},
-    {id: "buttonik2", name: "Vanilla Bean Crème Brûlée", price: 7.00},
-    {id: "buttonik3", name: "Macaron Mix of Five", price: 8.00},
-    {id: "buttonik4", name: "Classic Tiramisu", price: 5.50},
-    {id: "buttonik5", name: "Pistachio Baklava", price: 4.00},
-    {id: "buttonik6", name: "Lemon Meringue Pie", price: 5.00},
-    {id: "buttonik7", name: "Red Velvet Cake", price: 4.50},
-    {id: "buttonik8", name: "Salted Caramel Brownie", price: 5.50},
-    {id: "buttonik9", name: "Vanilla Panna Cotta", price: 6.50},
+    {id: "buttonik1",
+    name: "Waffle with Berries",
+    price: 6.50},
+    {id: "buttonik2",
+    name: "Vanilla Bean Crème Brûlée",
+    price: 7.00},
+    {id: "buttonik3",
+    name: "Macaron Mix of Five",
+    price: 8.00},
+    {id: "buttonik4",
+    name: "Classic Tiramisu",
+    price: 5.50},
+    {id: "buttonik5",
+    name: "Pistachio Baklava",
+    price: 4.00},
+    {id: "buttonik6",
+    name: "Lemon Meringue Pie",
+    price: 5.00},
+    {id: "buttonik7", 
+    name: "Red Velvet Cake", price: 4.50},
+    {id: "buttonik8", 
+    name: "Salted Caramel Brownie", 
+    price: 5.50},
+    {id: "buttonik9",
+    name: "Vanilla Panna Cotta", 
+    price: 6.50},
 ];
 
 const cart = {};
