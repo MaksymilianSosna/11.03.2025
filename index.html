@@ -2,79 +2,444 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
 
 <body>
 
-    <section class="hero">
-        <header>
-            <h1>Desserts</h1>
-        </header>
+  <main>
+    <section class="product-list">
+      <div class="top">
+        <h1> Desserts</h1>
+      </div>
+      <div class="bottom">
 
-         <section class="main">
-        <main>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-waffle-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik1" onclick="Change('Waffle with Berries', 6.50)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Waffle with Berries')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Waffle with Berries')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Waffle</p>
+            <h2 class="name">Waffle with Berries</h2>
+            <h2 class="price">$6.50</h2>
+          </div>
+        </div>
 
-            <section class="photofirst" id="produkt1">
-                <img src="images/image-waffle-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="photofirst">
-                <img src="images/image-creme-brulee-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="photofirst">
-                <img src="images/image-macaron-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="phototwo">
-                <img src="images/image-tiramisu-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="phototwo">
-                <img src="images/image-baklava-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="phototwo">
-                <img src="images/image-meringue-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="photothree">
-                <img src="images/image-cake-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="photothree">
-                <img src="images/image-brownie-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
-            <section class="photothree">
-                <img src="images/image-panna-cotta-desktop.jpg" alt="">
-                <button onclick="addtocard()"><img src="images/icon-add-to-cart.svg" style="width: 15px;" alt=""><p>Add to cart</p></button>
-            </section>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-creme-brulee-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik2" onclick="Change('Vanilla Bean Crème Brûlée', 7.00)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Vanilla Bean Crème Brûlée')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Vanilla Bean Crème Brûlée')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Crème Brûlée</p>
+            <h2 class="name">Vanilla Bean Crème Brûlée</h2>
+            <h2 class="price">$7.00</h2>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-macaron-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik3" onclick="Change('Macaron Mix of Five',8.00)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Macaron Mix of Five')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Macaron Mix of Five')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Macaron</p>
+            <h2 class="name"> Macaron Mix of Five</h2>
+            <h2 class="price">$8.00</h2>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-tiramisu-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik4" onclick="Change('Classic Tiramisu',5.50)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Classic Tiramisu')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Classic Tiramisu')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Tiramisu</p>
+            <h2 class="name">  Classic Tiramisu</h2>
+            <h2 class="price">$5.50</h2>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-baklava-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik5" onclick="Change('Pistachio Baklava',4.00)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Pistachio Baklava')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Pistachio Baklava')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Baklava</p>
+            <h2 class="name">  Pistachio Baklava</h2>
+            <h2 class="price">$4.00</h2>
+          </div>
+        </div>
 
-        </main>
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-meringue-desktop.jpg" alt="" >
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik6" onclick="Change('Lemon Meringue Pie',5.00)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Lemon Meringue Pie')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Lemon Meringue Pie')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">pie</p>
+            <h2 class="name"> Lemon Meringue Pie</h2>
+            <h2 class="price">$5.00</h2>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-cake-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik7" onclick="Change('Red Velvet Cake',4.50)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Red Velvet Cake')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Red Velvet Cake')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Cake</p>
+            <h2 class="name"> Red Velvet Cake</h2>
+            <h2 class="price">$4.50</h2>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-brownie-desktop.jpg" alt="">
+          </div>
+          <div class="product_add">
+            <div class="addCart active" id="buttonik8" onclick="Change('Salted Caramel Brownie',4.50)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn" onclick="remove('Salted Caramel Brownie')">-</button>
+              <p class="p_Text2">1</p>
+              <button class="cart-btn2" onclick="add('Salted Caramel Brownie')">+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Brownie</p>
+            <h2 class="name">Salted Caramel Brownie</h2>
+            <h2 class="price">$4.50</h2>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="images/image-panna-cotta-desktop.jpg" alt="">
+          </div>
+          <div class="product_add" >
+            <div class="addCart active" id="buttonik9" onclick="Change('Vanilla Panna Cotta',6.50)">
+              <img class="Cart_Image" src="images/icon-add-to-cart.svg" alt="">
+              <p class="p_Text1">Add to cart</p>
+              <button class="cart-btn"onclick="remove('Vanilla Panna Cotta')"  >-</button>
+              <p class="p_Text2"></p>
+              <button class="cart-btn2"onclick="add('Vanilla Panna Cotta')" >+</button>
+            </div>
+          </div>
+          <div class="product_info">
+            <p class="type">Panna Cotta</p>
+            <h2 class="name">Vanilla Panna Cotta</h2>
+            <h2 class="price">$6.50</h2>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="cart">
+<div class="CartTitle">Your Cart (0)</div>
+<div class="cartEmpty " id="cart_empty">
+ <div class="CartImage">
+  <img src="images/illustration-empty-cart.svg" alt="">
+</div>
+<div class="cartText">
+  <h2>Your added items will appear here</h2>
+</div> 
+</div>
+<div class="cartFull active" id="cart_Full">
+  <div class="cartList" id="cartList">
+    </div>
+<div class="Total">
+  <p class="TotalText">Order Total:</p>
+  <p class="TotalPrice" id="TotalPrice"></p>
+</div>
+<div class="info">
+  <img src="images/icon-carbon-neutral.svg" alt="">
+  <p>This is a <span>carbon-neutral</span> delivery</p>
+</div>
+<div class="submit">
+  <button onclick="tooglepopup()">Confirm Order</button>
+</div>
+</div>
 
-        <section class="sholplist" id="koszyk">
-            <h1>Your Cart (0)</h1>
-
-            <p>Your added items will appear here</p>
-        </section>
     </section>
     
-    <script>
-      
-        let produkt1 = document.getElementById("produk1");
-        let koszyk = document.getElementById("koszyk");
-        
-        produkt1.addEventListener("click", function(){
-            koszyk.innerHTML += "<h1>dasdasd</h1>"
-        })
+  </main>
+<section class="popup" id="popup1">
+  <div class="overlay"></div>
+  <div class="content" >
+      <div class="icon">
+        <img src="images/icon-order-confirmed.svg" alt="">
+      </div>
+      <div class="popup_icon">
+        <h2 class="popup_Title">Order Confirmed</h2>
+        <p class="popup_sideText">We hope you enjoy your food!</p>
+      </div>
+      <div class="popup_list" >
+       <div class="poplis" id="content"></div>
+        <div class="suma">
+          <p>Order Total:</p>
+          <h2 id="TotalPrice2"></h2>
+        </div>
+      </div>
+      <button onclick="tooglepopup()">Start new Order</button>
+  </div>
+    
+    </section>
 
+    <script>
+        const buttons = [
+    {id: "buttonik1", name: "Waffle with Berries", price: 6.50},
+    {id: "buttonik2", name: "Vanilla Bean Crème Brûlée", price: 7.00},
+    {id: "buttonik3", name: "Macaron Mix of Five", price: 8.00},
+    {id: "buttonik4", name: "Classic Tiramisu", price: 5.50},
+    {id: "buttonik5", name: "Pistachio Baklava", price: 4.00},
+    {id: "buttonik6", name: "Lemon Meringue Pie", price: 5.00},
+    {id: "buttonik7", name: "Red Velvet Cake", price: 4.50},
+    {id: "buttonik8", name: "Salted Caramel Brownie", price: 5.50},
+    {id: "buttonik9", name: "Vanilla Panna Cotta", price: 6.50},
+];
+
+const cart = {};
+let cartF = document.getElementById("cart_Full");
+let cartE = document.getElementById("cart_empty");
+const cartTitle = document.getElementsByClassName("CartTitle");
+let btncount = document.getElementsByClassName("p_Text2");
+function updateCartVisibility() {
+    if (Object.keys(cart).length === 0) {
+        cartE.classList.add("active");
+        cartF.classList.remove("active");
+    } else {
+        cartE.classList.remove("active");
+        cartF.classList.add("active");
+    }
+}
+
+function Change(productName, productPrice) {
+    
+    const btn = document.getElementById(`buttonik${buttons.findIndex(item => item.name === productName) + 1}`);
+    btn.classList.remove("active");
+
+    
+    if (!cart[productName]) {
+        cart[productName] = {
+            quantity: 1,
+            totalPrice: productPrice
+        };
+    }
+  
+    let suma = 0;
+ 
+    const cartItems = document.getElementById("cartList");
+
+    cartItems.innerHTML = ''; 
+
+    for (let productName in cart) {
+        
+        suma += cart[productName].totalPrice;
+        document.getElementsByClassName("p_Text2").innerText = `${cart[productName].quantity}`;
+        const item = document.createElement("div");
+        item.innerHTML = `
+        <div class="cartItem">
+            <div class="cartCont">
+                <div class="cartItemInfo">
+                    <h2>${productName}</h2>
+                </div>
+                <div class="cartItemInfo2">
+                    <h2 class="q">${cart[productName].quantity}</h2>
+                    <h2 class="p">$${cart[productName].totalPrice} </h2>
+                </div>
+            </div>
+            <div class="cartCont2" onclick="removeItme('${productName}')">
+                <img src="./assets/images/icon-remove-item.svg" alt="" >
+            </div>
+        </div>`;
+        cartItems.appendChild(item);
+    }
+   
+    let totallaPrice = document.getElementById("TotalPrice");
+    totallaPrice.innerText = `$ ${suma}`;
+    
+}
+let counter = document.getElementsByClassName("p_Text2");
+function add(productName) {
+    if (cart[productName]) {
+        cart[productName].quantity += 1;
+        cart[productName].totalPrice = cart[productName].quantity * buttons.find(item => item.name === productName).price;
+    }
+    Change(productName, buttons.find(item => item.name === productName).price);
+    counter.innerText = cart[productName].quantity;
+    updateCartVisibility(); 
+}
+
+function remove(productName) {
+    if (cart[productName]) {
+        cart[productName].quantity -= 1;
+        if (cart[productName].quantity === 0) {
+            delete cart[productName]; 
+        } else {
+            cart[productName].totalPrice = cart[productName].quantity * buttons.find(item => item.name === productName).price;
+        }
+    }
+    updateCartVisibility(); 
+    Change(productName, buttons.find(item => item.name === productName).price);
+    counter.innerText = cart[productName].quantity;
+}
+function refreshCart() {
+    let suma = 0;
+    const cartItems = document.getElementById("cartList");
+    cartItems.innerHTML = ''; 
+    let content = document.getElementById("content");
+
+    for (let productName in cart) {
+        suma += cart[productName].totalPrice;
+        const item = document.createElement("div");
+        item.innerHTML = `
+        <div class="cartItem">
+            <div class="cartCont">
+                <div class="cartItemInfo">
+                    <h2>${productName}</h2>
+                </div>
+                <div class="cartItemInfo2">
+                    <h2 class="q">${cart[productName].quantity}</h2>
+                    <h2 class="p">$${cart[productName].totalPrice} </h2>
+                </div>
+            </div>
+            <div class="cartCont2" onclick="removeItme('${productName}')">
+                <img src="./assets/images/icon-remove-item.svg" alt="" >
+            </div>
+        </div>`;
+        cartItems.appendChild(item);
+    }
+
+    let totalPriceElement = document.getElementById("TotalPrice");
+    totalPriceElement.innerText = `$ ${suma}`;
+
+    
+}
+
+function removeItme(productName) {
+    if (cart[productName]) {
+        delete cart[productName]; 
+    }
+    const buttonIndex = buttons.findIndex(item => item.name === productName) + 1;
+    const btn = document.getElementById(`buttonik${buttonIndex}`);
+    if (btn) {
+        btn.classList.add("active");
+    }
+    updateCartVisibility(); 
+    refreshCart(); 
+}
+function tooglepopup(){
+    let suma = 0;
+    document.getElementById("popup1").classList.toggle("active");
+    let content = document.getElementById("content");
+    for(let productName in cart){
+        suma += cart[productName].totalPrice;
+        const product = document.createElement("div");
+        product.innerHTML = `
+        <div class="PopupProduct">
+              <div class="product_informacja">
+               <div class="productName">
+                <h3>${productName}</h3>
+              </div>
+              <div class="productQuantity">${cart[productName].quantity}</div> 
+              </div>
+              <div class="productPrice">$${cart[productName].totalPrice}</div>
+            </div>
+            `;
+            content.appendChild(product);
+    }
+    let totalPriceElement2 = document.getElementById("TotalPrice2");
+    totalPriceElement2.innerText = `$ ${suma}`;
+}
+
+
+
+
+
+const observer = new MutationObserver(() => {
+    updateCartVisibility(); 
+});
     </script>
 
+
+  
 </body>
 
 </html>
